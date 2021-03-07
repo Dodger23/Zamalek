@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<meta charset="utf-8">
+
+<head>
+        <title>Zamalek FC</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+                integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+                crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap"
+                rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+                crossorigin="anonymous"></script>
+
+
+        <style>
+                :root {
+                        --darkblue: #2B2D42;
+                        --grey: #A1A1A1;
+                        --red: #EF233C;
+                        --darkred: #D90429;
+                }
+
+                body {
+                        height: 10000px;
+                }
+
+                a {
+                        color: var(--darkblue);
+                }
+
+                a:hover {
+                        text-decoration: none;
+                        color: var(--darkblue);
+                }
+
+                .arabic {
+                        text-align: center;
+                        font-family: 'Almarai';
+                }
+
+                .arabic-right {
+                        text-align: right;
+                        font-family: 'Almarai';
+                }
+
+                .container {
+                        max-width: 1358px;
+                }
+
+                nav {
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding: 50px 0px 50px 40px;
+                        line-height: 5.5;
+                }
+
+                nav a {
+                        font-family: 'Almarai';
+                        font-weight: 700;
+                        font-size: larger;
+                }
+
+                nav a:hover {
+                        border-bottom: 3px solid #D90429;
+                        border-radius: 2%;
+                }
+
+                .darkblue_button {
+                        background-color: #383c64;
+                        color: #fff;
+                        font-weight: 700;
+                        font-family: 'Almarai';
+                        padding: 1% 7%;
+                        border-radius: 30px;
+                }
+
+                .darkblue_button:hover {
+                        background-color: var(--darkblue);
+                        color: #fff;
+                }
+
+                .darkred_btn {
+                        background-color: var(--red);
+                        color: #fff;
+                        font-weight: 700;
+                        font-family: 'Almarai';
+                        padding: 1% 7%;
+                        border-radius: 30px;
+                }
+
+                .darkred_btn:hover {
+                        background-color: var(--darkred);
+                        color: #fff;
+                }
+
+                .title {
+                        font-family: 'Almarai';
+                        font-weight: 900;
+                        font-size: 35px;
+                        border-right: 6px solid #D90429;
+                        border-radius: 3px;
+                        padding-right: 10px;
+                }
+
+                nav img {
+                        max-width: 100px;
+                        max-height: 100px;
+                }
+
+                .selected {
+                        font-weight: 900;
+                        border-bottom: 3px solid #D90429;
+                        border-radius: 2%;
+                }
+
+                header {
+                        display: flex;
+                        justify-content: space-evenly;
+                }
+
+                .bio {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                }
+
+                .header_img {
+                        display: flex;
+                        justify-content: left;
+                }
+
+                .league {
+                        padding: 200px 0px;
+                }
+
+                .next_match {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                }
+
+                .league_card {
+                        padding: 20px;
+                        border-radius: 10px;
+                }
+
+
+                .news {
+                        background-image: url('static/news_background.png');
+                        background-size: cover;
+                }
+
+
+                .card {
+                        padding: 10px;
+                        min-width: 380px;
+                        margin: 20px;
+                }
+        </style>
+
+</head>
+
+<body>
+        <nav>
+                <a href="#" class="selected">الرئيسية</a>
+                <a href="#">الأخبار</a>
+                <a href="#">الألعاب الأخرى</a>
+                <a href="#">الاعلام</a>
+                <img src="static/logo.png" style="margin-left: 10px;">
+                <a href="#">مواعيد التدريبات</a>
+                <a href="#">مقالات الموقع</a>
+                <a href="#">تاريخ النادي</a>
+
+        </nav>
+
+
+
+        <div class='container'>
+
+                <header>
+                        <div class="bio">
+                                <p class="arabic" style="text-align: right;"><span
+                                                style="font-size:35px;font-weight: 900;border-bottom: 6px solid #D90429;border-radius: 2px; padding-bottom: 20px; ">نادي
+                                                الزمالك </span></p>
+                                <p class="arabic-right"
+                                        style="max-width: 80%;margin-top: 30px;font-size: 22px;color: var(--grey);line-height:2.1;">
+                                        تأسس
+                                        نادي الزمالك عام 1911 على يد جورج مرزباخ
+                                        و هو محامي بلجيكي كان رئيسا لأحد المحاكم المختلطة
+                                        في مصر, و حقق الزمالك اول بطولة كأس له عام 1922
+                                        و كانت أول بطولة كاس تقام في مصر.
+                                        و أول بطولة دوري حصل عليها الزمالك كانت
+                                        عام 1960 ...</p>
+                                <div style="display: flex; justify-content: right;">
+                                        <button class="btn darkblue_button">اقرأ المزيد</button>
+                                </div>
+                        </div>
+
+                        <div class="header_img">
+                                <img src="static/header_img.png" style="max-height: 720px;">
+                        </div>
+
+                </header>
+
+
+                <div class="league row" style="display: flex; justify-content: space-between;">
+                        <div class="league_table col-12  col-md-5">
+                                <div class="arabic">
+                                        <span class="title">ترتيب الدوري</span>
+                                </div>
+
+                                <div class="league_card shadow" style="margin-top: 50px;">
+                                        <div class="arabic">
+                                                <p style="font-size: 20px; font-weight: 600;">جدول الدوري المصري الممتاز
+                                                </p>
+                                        </div>
+
+                                        <div class="row"
+                                                style="text-align: right;padding-right: 10px;color: #EF233C;font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                <span class="col-6 arabic" style="text-align: right;">الفريق</span>
+                                                <span class="col-3 arabic">النقاط</span>
+                                                <span class="col-3 arabic">الأهداف</span>
+                                        </div>
+
+                                        <hr>
+
+                                        <div>
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--darkblue);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">الزمالك</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">الأهلي</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic" style="text-align: right;">الاتحاد
+                                                                السكندري</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">بيراميدز</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">الاسماعيلي</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic" style="text-align: right;">المقاولون
+                                                                العرب</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">سموحة</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic" style="text-align: right;">الانتاج
+                                                                الحربي</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic"
+                                                                style="text-align: right;">الجونة</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                                <div class="row"
+                                                        style="text-align: right;padding-right: 10px;color: var(--grey);font-size: 20px;font-weight: 600;margin-top: 20px;">
+                                                        <span class="col-6 arabic" style="text-align: right;">حرس
+                                                                الحدود</span>
+                                                        <span class="col-3 arabic">89</span>
+                                                        <span class="col-3 arabic">66</span>
+                                                </div>
+
+                                        </div>
+                                </div>
+
+                        </div>
+
+
+                        <div class="next_match col-12  col-md-5">
+                                <div class="arabic">
+                                        <span class="title">الماتش القادم</span>
+                                </div>
+
+                                <div style="margin-top: 50px;">
+                                        <div class="row">
+                                                <div class="col-4"
+                                                        style="background-image: url('static/logo.png');height: 236px; background-size: cover;">
+                                                </div>
+
+                                                <div class="col-4 arabic"
+                                                        style="display: flex; justify-content: center; flex-direction: column;font-weight: 600;font-size: 20px;">
+                                                        <p>25/4/2021</p>
+                                                        <p>17:00</p>
+                                                        <p>ستاد القاهرة</p>
+
+                                                </div>
+
+                                                <div class="col-4"
+                                                        style="background-image: url('static/Alahly_logo.png');height: 240px; background-size: cover;">
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+
+                </div>
+        </div>
+
+
+        <div class="news" style="height: 1068px;">
+                <div class="container">
+                        <div style="display: flex;justify-content: center;">
+                                <span class="arabic title">آخر الأخبار</span>
+                        </div>
+
+                        <div class="news_content"
+                                style="display: flex;justify-content: space-evenly;flex-wrap: wrap; margin-top: 100px;">
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+                                <div class="card shadow" style="width: 18rem;">
+                                        <img class="card-img-top" src="static/news.jpg" alt="Card image cap">
+                                        <div class="card-body">
+                                                <h5 class="arabic">أشرف قاسم : قادرون على تحقيق نتيجة ايجابية امام
+                                                        الترجي</h5>
+                                                <p class="card-text arabic-right" style="color: var(--grey);margin-top:20px;">أكد أشرف
+                                                        قاسم المشرف العام على الكرة بنادي الزمالك
+                                                        ان كل أمور البعثة تسير بشكل ...</p>
+                                                <div style="display: flex; justify-content: center;margin-top:40px;">
+                                                        <button class="btn darkred_btn">اقرأ المزيد</button>
+                                                </div>
+                                        </div>
+                                </div>
+
+
+                        </div>
+
+                        <div style="display: flex;justify-content: center; margin-top: 50px;">
+                                <button class="btn darkblue_button">كل الأخبار</button>
+                        </div>
+                </div>
+
+        </div>
+
+
+
+
+
+</body>
